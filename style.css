@@ -1,0 +1,372 @@
+/*
+Theme Name: MakTro Theme
+Author: 1MANDEV
+Author URI: http://1mandev.com
+Description: MakTro Theme, a child theme, is built for MakTro.com by 1MANDEV based Shopper Theme. Please don't deactivae/delete this and Shopper theme unless you are a developer of this site.
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: shopper
+Text Domain: maktro
+*/
+
+:root {
+    /* Color Scheme */
+    --primary: #6a60a9;
+    --secondary: #FFBC42;
+    --gray: #e0e0e0;
+    --light: #fff;
+    --dark: rgb(35, 35, 35);
+}
+
+.primary-widget-region{
+	margin-top: 12px;
+}
+
+.shopper-primary-navigation {
+    background-color: var(--secondary);
+}
+
+.main-navigation ul li a {
+    color: var(--light);
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+    color: var(--dark);
+}
+
+
+.main-navigation ul li a:hover,
+.site-header ul.menu li.current-menu-item>a,
+.widget_product_categories>ul li.current-cat>a {
+    color: var(--primary);
+}
+
+.shopper-product-section .section-title span {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .home .col-full {
+
+        padding: 0 0
+    }
+}
+
+img.nivo-main-image {
+    border-radius: 0;
+}
+
+.home.page-template-tpl-page-homepage .entry-content {
+    max-width: 100%;
+}
+
+.header-myacc-link i {
+    color: var(--secondary);
+}
+
+.header-myacc-link i:hover {
+    color: var(--primary);
+}
+
+.home .shopper-hero__button-edit,
+.home .entry-header {
+    display: none;
+}
+
+.home.page-template-tpl-page-homepage .type-page {
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+
+
+.shopper-myacc-cart .site-header-cart .amount {
+    color: var(--secondary);
+}
+
+.shopper-myacc-cart .site-header-cart .amount:hover {
+    color: var(--primary);
+}
+
+.shopper-myacc-cart .site-header-cart a.cart-contents {
+    color: var(--secondary);
+}
+
+.shopper-myacc-cart .site-header-cart a.cart-contents:hover {
+    color: var(--primary);
+}
+
+.hentry .entry-header .entry-title {
+    margin-bottom: 70px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+
+.hentry .entry-header .entry-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    margin-top: 14px;
+    height: 2px;
+    background-color: var(--primary);
+    margin: 0 auto;
+}
+
+.col2-set#customer_login .col-1 {
+    width: 47%;
+    padding: 55px 55px 37px 55px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--gray);
+}
+
+.col2-set#customer_login .col-2 {
+    width: 47%;
+    padding: 55px 55px 37px 55px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--gray);
+}
+
+.col2-set#customer_login .col-2 h2,
+.col2-set#customer_login .col-1 h2 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+.input-text {
+    border-radius: 5px;
+}
+
+.woocommerce-form__label-for-checkbox {
+    margin-top: 10px;
+}
+
+button,
+.button {
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .col2-set#customer_login .col-1 {
+        width: 80%;
+        padding: 55px 55px 37px 55px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .col2-set#customer_login .col-2 {
+        width: 80%;
+        padding: 55px 55px 37px 55px;
+        margin: 0 auto;
+    }
+}
+
+.woocommerce-privacy-policy-text {
+    display: none;
+}
+
+.widget .widget-title:before {
+    background-color: var(--light);
+}
+
+.site-footer a {
+    display: inline-block;
+    margin-top: -25px;
+}
+
+.site-footer a img {
+    height: 70px;
+}
+
+#mobile-menu-wrapper {
+    background: var(--secondary);
+    z-index: 111;
+}
+
+@media (min-width: 768px) {
+    .main-navigation li.current_page_parent>a {
+        color: var(--light);
+    }
+
+}
+
+.cart-toggle {
+    z-index: 1;
+}
+
+
+
+.um-account-icon,
+.um a.um-link,
+.um-account-main div.um-account-heading {
+    color: var(--primary) !important;
+}
+
+
+
+.um-account-side li {
+    background-color: #FFBC4295;
+    border-radius: 5px;
+}
+
+.um input[type=submit].um-button,
+.um input[type=submit].um-button:hover {
+    background-color: var(--primary);
+}
+
+
+.um-profile-nav-item:nth-child(1),
+.um-profile-nav-item:nth-child(2),
+.um-profile-nav-item:nth-child(3) {
+    display: none;
+}
+
+
+
+.col-2 .woocommerce-shipping-fields {
+    display: none;
+}
+
+.shopper-primary-navigation .primary-widget-region {
+    text-align: right;
+}
+
+
+input[name="billing_first_name"] {
+    width: 100%;
+}
+
+input[name="billing_address_1"] {
+    height: 60px;
+}
+
+
+
+@media (min-width: 900px) {
+
+    input[name="billing_first_name"] {
+        width: 530px !important;
+    }
+
+}
+
+.site-info {
+    display: none;
+}
+
+.site-info-show {
+    display: inline-block;
+    font-size: 13px;
+}
+
+/* Dealers Page */
+
+.dealer-division {
+    background-color: var(--gray);
+    text-align: center;
+    color: var(--light);
+    border-radius: 7px !important;
+}
+
+.dealer-division h5 {
+    margin: auto;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.accordion-title::before {
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.dealer-division,
+.dealer-division:hover {
+    text-decoration: none;
+}
+
+.dealer-box {
+    text-align: center;
+    background-color: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+}
+
+.dealer-box__inner {
+    padding: 30px 4px;
+}
+
+.dealer-box__icon {
+    background-color: var(--secondary);
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    box-shadow: 3px 3px 9px #dddddd99;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.dealer-box__icon:hover {
+    text-decoration: none;
+}
+
+.dealer-box__icon i {
+    align-self: center;
+    font-size: 36px;
+    color: var(--light);
+}
+
+.dealer-box__zilla {
+    margin-top: 20px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.dealer-box__name {
+    color: var(--secondary);
+}
+
+.dealer-box__phone {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.dealer-box__phone:hover {
+    text-decoration: underline;
+}
+
+.accordion-content {
+    border: none;
+}
+
+.accordion-title {
+    border-radius: 8px;
+}
+
+.my-2 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+#menu-primary-menu {
+    margin-top: 5px!important;
+}
+
+.menu .active>a {
+    background-color: transparent!important;
+}
